@@ -1,16 +1,17 @@
-import CardContact from "./components/CardContact"
-import Table from "./components/Table"
+import CardContact from "./components/CardContact";
+import Table from "./components/Table";
+import { DataProvider } from "./context/dataTableContext/DataContext";
+
 
 const App = () => {
-  return (
-    <div className="grid grid-cols-2">
-      <Table/>
-      {/* {/* <CardContact/> */}
-      <CardContact/> 
-      {/* <CardContact/>
-      <CardContact/> */}
-    </div>
-  )
-}
+	return (
+		<div className="grid grid-cols-2">
+			<DataProvider>
+				<Table />
+				<CardContact />
+			</DataProvider>
+		</div>
+	);
+};
 
-export default App
+export default App;

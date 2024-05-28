@@ -1,14 +1,9 @@
-import React from 'react'
-
-const data = {
-	columns: ["Name", "Email", "Phone"],
-	rows: [
-		["John Doe", "john@example.com", "123-456-7890"],
-		["Jane Smith", "jane@example.com", "098-765-4321"],
-	],
-};
+import { useContext } from 'react';
+import { DataContext } from '../context/dataTableContext/DataContext';
 
 const Table = () => {
+  const data = useContext(DataContext);
+
   return (
     <div className='overflow-x-auto'>
         <table className='min-w-full'>
@@ -37,4 +32,4 @@ const Table = () => {
   )
 }
 
-export default Table
+export default Table;
