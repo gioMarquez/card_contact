@@ -5,7 +5,7 @@ const Table = () => {
 
    // Verificar si data es null antes de acceder a sus propiedades
    if (!data) {
-    return <div>Cargando...</div>; // O cualquier otro indicador de carga que desees mostrar
+    return <div className="text-2xl text-blue-800 flex justify-center pt-24">Cargando...</div>; // O cualquier otro indicador de carga que desees mostrar
   }
 
   return (
