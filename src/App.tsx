@@ -1,12 +1,14 @@
 import CardContact from "./components/CardContact"
+import Table from "./components/Table"
 
 const App = () => {
   return (
-    <div className="grid grid-cols-4">
-      <CardContact/>
-      <CardContact/>
-      <CardContact/>
-      <CardContact/>
+    <div className="grid grid-cols-2">
+      <Table/>
+      {/* {/* <CardContact/> */}
+      <CardContact/> 
+      {/* <CardContact/>
+      <CardContact/> */}
     </div>
   )
 }
