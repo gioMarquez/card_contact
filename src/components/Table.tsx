@@ -1,8 +1,12 @@
-import { useContext } from 'react';
-import { DataContext } from '../context/dataTableContext/DataContext';
+import { useData } from "../context/dataTableContext/useData";
 
 const Table = () => {
-  const data = useContext(DataContext);
+  const data = useData();
+
+   // Verificar si data es null antes de acceder a sus propiedades
+   if (!data) {
+    return <div>Cargando...</div>; // O cualquier otro indicador de carga que desees mostrar
+  }
 
   return (
     <div className='overflow-x-auto'>
