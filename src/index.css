@@ -3,11 +3,3 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-.card {
-  @apply m-2 bg-slate-500 rounded-lg p-3 w-fit
-}
-
-.name-contact{
-  @apply text-white font-semibold
-
-}

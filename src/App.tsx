@@ -2,9 +2,12 @@ import CardContact from "./components/CardContact"
 
 const App = () => {
   return (
-    <div>
+    <div className="grid grid-cols-4">
       <CardContact/>
-      </div>
+      <CardContact/>
+      <CardContact/>
+      <CardContact/>
+    </div>
   )
 }
 
